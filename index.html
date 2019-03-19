@@ -1,0 +1,35 @@
+<html>
+<title>Project 2</title>
+<style>
+
+</style>
+<script type="text/javascript">
+  function checkBit(){
+    var num= document.getElementById("example").value;
+    if(num == 0){
+      document.getElementById("demo").innerHTML="No";
+    }
+
+  //  while(num > 0){
+      if((num & 1)==0){
+        document.getElementById("demo").innerHTML="No";
+        num=num >> 1;
+      }else{
+        document.getElementById("demo").innerHTML= "Yes";
+      }
+
+    //}
+  }
+</script>
+<body>
+  <h2>Tiara Loftin</h2>
+  <h2>COMP 476 Check Bit Project</h2>
+  <h2>3/18/19</h2>
+  <br>
+<h2>Enter a number:</h2>
+<input type="text" name="number" value="" id="example">
+<br>
+<button onclick="checkBit();">Check Bit</button>
+<h3 id="demo"></h3>
+</body>
+</html>
